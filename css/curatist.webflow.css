@@ -1,7 +1,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -50,7 +50,7 @@ h6 {
 p {
   margin-bottom: 10px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 a {
@@ -639,6 +639,15 @@ a {
   background-repeat: no-repeat;
 }
 
+.name-div {
+  position: relative;
+  margin-top: 220px;
+}
+
+.name-div.text-left {
+  text-align: right;
+}
+
 @media (max-width: 991px) {
   .nav-menu {
     padding-top: 18px;
@@ -724,6 +733,14 @@ a {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  .name-div {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .name-div.text-left {
+    margin-top: 40px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 479px) {
@@ -743,6 +760,17 @@ a {
     margin-right: 0px;
     margin-bottom: 12px;
     margin-left: 0px;
+  }
+  .who-image {
+    margin-top: 0px;
+  }
+  .name-div {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .name-div.text-left {
+    margin-top: 40px;
+    text-align: center;
   }
 }
 
