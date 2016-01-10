@@ -59,37 +59,21 @@
         <div class="w-col w-col-3"></div>
       </div>
     </div>
+    <h2 class="contact-h3">Tell Us Anything</h2>
+    <div id="feedback-container">
+
+    </div>
     <div class="w-container content">
       <div class="contact-row">
-        <h2 class="contact-h3">Tell Us Anything</h2>
-        <div class="w-form form">
-          <form id="email-form" name="email-form" data-name="Email Form">
-            <label for="name" class="field">Name:</label>
-            <input id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" class="w-input input">
-            <label for="email" class="field">Email Address:</label>
-            <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" class="w-input input">
-            <label for="Subject" class="field">Subject:</label>
-            <input id="Subject" type="email" placeholder="Enter your subject" name="Subject" data-name="Subject" required="required" class="w-input input">
-            <label for="field" class="field">Message:</label>
-            <textarea id="field" placeholder="Enter your message" name="field" class="w-input input textarea"></textarea>
-            <input type="submit" value="Send Message" data-wait="Please wait..." class="w-button button contact">
-          </form>
-          <div class="w-form-done success">
-            <p>Thank you! Your submission has been received!</p>
-          </div>
-          <div class="w-form-fail">
-            <p>Oops! Something went wrong while submitting the form</p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div class="w-section footer">
     <div class="w-container">
-      <a href="#" class="w-inline-block footer-link">
+      <a href="https://www.facebook.com/thecuratist" target="_blank" class="w-inline-block footer-link">
         <img width="23" src="images/social-03-white.svg">
       </a>
-      <a href="#" class="w-inline-block footer-link">
+      <a href="https://twitter.com/The_Curatist" target="_blank" class="w-inline-block footer-link">
         <img width="23" src="images/social-18-white.svg">
       </a>
     </div>
@@ -97,5 +81,65 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+  <script type="text/javascript">
+    window.doorbellOptions = {
+      hideButton: true,
+      container: document.getElementById('feedback-container'),
+      appKey: 'QnzkAeEgdFD1Ic0zOk2X1PlRB6FapNxTUFvsfLaZijH7DjiQL2cN31BRVlGNj5tC'
+    };
+    (function(d, t) {
+      var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/2825?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g);
+    }(document, 'script'));
+  </script>
+
+  <style>
+    #feedback-container{
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    #feedback-container textarea,
+    #feedback-container input {
+      margin-bottom: 20px !important;
+      border-style: none;
+      background-color: rgba(102, 102, 102, 0.64);
+      color: white;
+      line-height: 1.428571429;
+      padding: 8px 12px !important;
+    }
+
+    #doorbell form legend {
+      display: none !important;
+    }
+
+    #doorbell button {
+      width: auto !important;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 10px 45px !important;
+      border-color: black;
+      background-color: #dd8988;
+      font-family: Lato, sans-serif;
+      color: black;
+      padding-left: 0;
+      padding-right: 0;
+      display: block;
+      cursor: pointer;
+    }
+
+    .contact-h3 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 30px
+    }
+
+    #doorbell #doorbell-powered-by {
+      color: #160D0D;
+    }
+
+
+  </style>
 </body>
 </html>
